@@ -178,6 +178,10 @@
     <Compile Include="Core\Domain\Trip.cs" />
     <Compile Include="Core\Domain\Vehicle.cs" />
     <Compile Include="Core\Domain\Voucher.cs" />
+    <Compile Include="Core\Repositories\IBookingRepository.cs" />
+    <Compile Include="Core\Repositories\IClientRepository.cs" />
+    <Compile Include="Core\Repositories\IPassengerRepository.cs" />
+    <Compile Include="Core\Repositories\ITripRepository.cs" />
     <Compile Include="Core\Services\IBookingService.cs" />
     <Compile Include="Core\Services\IClientService.cs" />
     <Compile Include="Core\Services\IPassengerService.cs" />
@@ -250,7 +254,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Core\Repositories\" />
     <Folder Include="Persistance\Context\" />
     <Folder Include="Persistance\Repositories\" />
     <Folder Include="ViewModels\" />
