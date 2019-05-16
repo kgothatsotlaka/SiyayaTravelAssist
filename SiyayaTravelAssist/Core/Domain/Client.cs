@@ -7,7 +7,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public Client()
         {
             Bookings = new HashSet<Booking>();
-            Trips = new HashSet<Trip>();
+           
         }
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -17,7 +17,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public int Telephone { get; set; }
 
         public ICollection<Booking> Bookings { get; set; }
-        public ICollection<Trip> Trips { get; set; }
+       
 
     }
 }
