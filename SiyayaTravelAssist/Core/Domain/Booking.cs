@@ -5,6 +5,10 @@ namespace SiyayaTravelAssist.Core.Domain
 {
     public class Booking
     {
+        public Booking()
+        {
+            BookingTrips = new HashSet<BookingTrip>();
+        }
         
         public int Id { get; set; }
         public string BookingStatus { get; set; } //Booking Status(Completed or whatever)
@@ -30,7 +34,7 @@ namespace SiyayaTravelAssist.Core.Domain
 
 
         //One Booking - Many BookingTrips (Booking is like C)
-        public ICollection<BookingTrip> Type { get; set; }
+        public ICollection<BookingTrip> BookingTrips { get; set; }
 
 
         //One BookingType - Many Bookings (Booking is like H)

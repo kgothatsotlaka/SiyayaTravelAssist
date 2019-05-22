@@ -16,6 +16,8 @@ namespace SiyayaTravelAssist.Core.Domain
         public string EmailAddress { get; set; }
         public int Telephone { get; set; }
 
+
+        //Client-Booking(1-M) (C-H) 
         public ICollection<Booking> Bookings { get; set; }
        
 
