@@ -31,9 +31,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public virtual Client Client { get; set; }
         public int ClientId { get; set; }
 
-        ////One Employee - Many Bookings (Booking is like H)
-        //public virtual Employee Employee { get; set; }
-        //public int EmployeeId { get; set; }
+      
 
         //Zero Or One Quote - One Booking
         public Quote Quote { get; set; }
