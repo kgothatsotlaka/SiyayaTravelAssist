@@ -11,7 +11,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public int Id { get; set; }
         public string FullName { get; set; }
         public string LastName { get; set; }
-        public int Telephone { get; set; }
+        public string Telephone { get; set; }
 
         //Trip - Passenger (M - 1) (C- H)
         public ICollection<Trip> Trips { get; set; }

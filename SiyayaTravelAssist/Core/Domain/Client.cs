@@ -9,12 +9,13 @@ namespace SiyayaTravelAssist.Core.Domain
             Bookings = new HashSet<Booking>();
            
         }
+
         public int Id { get; set; }
+        public string ClientReference { get; set; } // Id or Company Registration Number
         public string FirstName { get; set; }
-        public string LastName { get; set; }
         public string Address { get; set; }
         public string EmailAddress { get; set; }
-        public int Telephone { get; set; }
+        public string Telephone { get; set; }
 
 
         //Client-Booking(1-M) (C-H) 

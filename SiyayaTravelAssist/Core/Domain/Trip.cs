@@ -9,7 +9,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public int Id { get; set; }
         public DateTime PickUpTime { get; set; } //given by client
         public DateTime PickUpDate { get; set; } //given by client
-        public DateTime EstimatedDropOffTime { get; set; } //calculated by system
+       // public DateTime EstimatedDropOffTime { get; set; } //calculated by system
        
         
 
@@ -25,8 +25,8 @@ namespace SiyayaTravelAssist.Core.Domain
         public int PassengerId { get; set; }
 
         //LocationType- Location (1-M) (C - H)
-        public virtual LocationType LocationType { get; set; }
-        public int LocationTypeId { get; set; }
+        //public virtual LocationType LocationType { get; set; }
+        //public int LocationTypeId { get; set; }
 
 
     }

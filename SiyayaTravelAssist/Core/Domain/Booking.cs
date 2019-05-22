@@ -12,7 +12,7 @@ namespace SiyayaTravelAssist.Core.Domain
         
         public int Id { get; set; }
         public string BookingStatus { get; set; } //Booking Status(Completed or whatever)
-        public string ClientReference { get; set; } // Id or Registration Number
+        //public string ClientReference { get; set; } 
         public DateTime DateCreated { get; set; }
       
        
@@ -23,7 +23,7 @@ namespace SiyayaTravelAssist.Core.Domain
         public string PaymentType { get; set; } // Type Of Payment
         public string PaymentStatus { get; set; } //Payment Status(Payed, Deposit  or whatever)
         public string AdditionalInformation { get; set; }
-        public int NumberOfPassenger { get; set; }
+        public int NumberOfPassengers { get; set; }
 
 
 
@@ -31,9 +31,9 @@ namespace SiyayaTravelAssist.Core.Domain
         public virtual Client Client { get; set; }
         public int ClientId { get; set; }
 
-        //One Employee - Many Bookings (Booking is like H)
-        public virtual Employee Employee { get; set; }
-        public int EmployeeId { get; set; }
+        ////One Employee - Many Bookings (Booking is like H)
+        //public virtual Employee Employee { get; set; }
+        //public int EmployeeId { get; set; }
 
         //Zero Or One Quote - One Booking
         public Quote Quote { get; set; }
@@ -44,8 +44,8 @@ namespace SiyayaTravelAssist.Core.Domain
 
 
         //One BookingType - Many Bookings (Booking is like H)
-        public virtual BookingTrip BookingTrip { get; set; }
-        public int BookingTripId { get; set; }
+        public virtual BookingType BookingType { get; set; }
+        public int BookingTypeId { get; set; }
       
 
      
