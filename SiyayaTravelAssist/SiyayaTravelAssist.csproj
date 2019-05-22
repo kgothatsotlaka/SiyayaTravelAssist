@@ -176,6 +176,7 @@
     <Compile Include="Core\Domain\Client.cs" />
     <Compile Include="Core\Domain\Driver.cs" />
     <Compile Include="Core\Domain\Employee.cs" />
+    <Compile Include="Core\Domain\Gender.cs" />
     <Compile Include="Core\Domain\Invoice.cs" />
     <Compile Include="Core\Domain\Location.cs" />
     <Compile Include="Core\Domain\Passenger.cs" />

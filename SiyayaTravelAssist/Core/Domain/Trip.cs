@@ -7,17 +7,26 @@ namespace SiyayaTravelAssist.Core.Domain
     {
        
         public int Id { get; set; }
-        public DateTime PickUpTime { get; set; }
-        public DateTime DropOffTime { get; set; }
-        public Location DropOffLocationId { get; set; }
-        public Location PickUpLocationId { get; set; }
-        public string PickUpInstructions { get; set; }
+        public DateTime PickUpTime { get; set; } //given by client
+        public DateTime PickUpDate { get; set; } //given by client
+        public DateTime EstimatedDropOffTime { get; set; } //calculated by system
+       
+        
 
+        //Trip and Location (P B)
+        public Location PickupLocation { get; set; }
+        public Location DropOffLocation { get; set; }
 
-        public Passenger PassengerId { get; set; }
-        public Booking BookingId { get; set; } // Prefer to use Booking Reference Attribute
-        public Vehicle VehicleId { get; set; }
-        public Driver DriverId { get; set; }
+        //Trip and BookingTrip(P B)
+        public BookingTrip BookingTrip { get; set; }
+
+        //Trip-Passenger ( H-C)
+        public virtual Passenger Passenger { get; set; }
+        public int PassengerId { get; set; }
+
+        //LocationType- Location (1-M) (C - H)
+        public virtual LocationType LocationType { get; set; }
+        public int LocationTypeId { get; set; }
 
 
     }

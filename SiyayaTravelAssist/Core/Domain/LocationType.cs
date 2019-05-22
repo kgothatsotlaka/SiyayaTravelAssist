@@ -1,9 +1,8 @@
 ﻿namespace SiyayaTravelAssist.Core.Domain
 {
-    public class Location
+    public class LocationType
     {
         public int Id { get; set; }
-        public string LocationName { get; set; }
-       
+
     }
 }
