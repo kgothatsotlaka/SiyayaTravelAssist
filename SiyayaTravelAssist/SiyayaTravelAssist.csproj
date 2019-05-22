@@ -201,11 +201,34 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905222152290_initialMigration.cs" />
+    <Compile Include="Migrations\201905222152290_initialMigration.Designer.cs">
+      <DependentUpon>201905222152290_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Persistence\AppDbContext.cs" />
     <Compile Include="Persistence\EntityConfigurations\BookingConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\BookingTripConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\BookingTypeConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\ClientConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\DriverConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\EmployeeConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\EmployeeTypeConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\GenderConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\LicenseTypeConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\LocationConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\NationaliityConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\PassengerConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\TitleConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\TripConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\VehicleBrandTypeConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\VehicleColorConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\VehicleConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\VehicleGroupController.cs" />
+    <Compile Include="Persistence\EntityConfigurations\VehicleModelTypeConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BookingService.cs" />
     <Compile Include="Startup.cs" />
@@ -285,6 +308,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905222152290_initialMigration.resx">
+      <DependentUpon>201905222152290_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

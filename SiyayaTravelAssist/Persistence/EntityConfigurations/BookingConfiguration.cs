@@ -11,8 +11,16 @@ namespace SiyayaTravelAssist.Persistence.EntityConfigurations
                 .HasForeignKey(c => c.CityId)
                 .WillCascadeOnDelete(false);
          */
+
+        /**
+         *   HasRequired(h => h.City)
+                .WithMany(c => c.Hospitals)
+                .HasForeignKey(c => c.CityId)
+                .WillCascadeOnDelete(false);
+         */
         public BookingConfiguration()
         {
+            //Like C
             HasMany(b =>b.BookingTrips)
                  .WithRequired(b => b.Booking)
                  .HasForeignKey(b => b.BookingId)
@@ -30,6 +38,10 @@ namespace SiyayaTravelAssist.Persistence.EntityConfigurations
                 .WithMany(c => c.Bookings)
                 .HasForeignKey(c => c.BookingTypeId)
                 .WillCascadeOnDelete(false);
+
+            //Quote
+            HasOptional(b => b.Quote)
+                .WithRequired(p => p.Booking);
         }
 
     }

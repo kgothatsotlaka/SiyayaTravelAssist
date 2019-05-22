@@ -44,8 +44,10 @@ namespace SiyayaTravelAssist.Core.Domain
         //One BookingType - Many Bookings (Booking is like H)
         public virtual BookingType BookingType { get; set; }
         public int BookingTypeId { get; set; }
-      
 
      
+
+
+
     }
 }
