@@ -204,6 +204,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Persistence\AppDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BookingService.cs" />
     <Compile Include="Startup.cs" />
@@ -267,8 +268,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Persistance\Context\" />
-    <Folder Include="Persistance\Repositories\" />
+    <Folder Include="Persistence\Context\" />
+    <Folder Include="Persistence\Repositories\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>

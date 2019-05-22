@@ -13,8 +13,6 @@ namespace SiyayaTravelAssist.Core.Domain
         public int Id { get; set; }
         public string LicenseNumber { get; set; }
         public DateTime LicenseExpiryDate {get; set; }
-
-
         public ICollection<BookingTrip> BookingTrips { get; set; }
         
 
